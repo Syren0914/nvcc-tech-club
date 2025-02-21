@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { MessageSquare, Gamepad, Users } from "lucide-react"
+import { MessageSquare, Gamepad } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function Community() {

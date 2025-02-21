@@ -2,8 +2,7 @@ import type React from "react"
 import "./globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import { FaCode } from "react-icons/fa";
-import Link from "next/link"
+
 import Navbar from "./navbar/page";
 
 const inter = Inter({ subsets: ["latin"] })

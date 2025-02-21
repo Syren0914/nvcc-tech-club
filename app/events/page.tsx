@@ -43,7 +43,7 @@ export default function Events() {
     <div>
       <h1 className="text-4xl font-bold mb-6">Events & Meetings</h1>
       <p className="text-lg mb-8 text-muted-foreground">
-        Stay up-to-date with our upcoming events, workshops, and meetings. Don't miss out on these opportunities to
+        Stay up-to-date with our upcoming events, workshops, and meetings. Don&apos;t miss out on these opportunities to
         learn and connect!
       </p>
 
