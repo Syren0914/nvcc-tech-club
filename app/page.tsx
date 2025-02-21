@@ -29,7 +29,7 @@ export default function Home() {
             <h1 className="text-4xl font-bold mb-4 text-white">Welcome to the Tech Club</h1>
             <p className="text-xl mb-6 text-gray-200">Explore, Learn, and Innovate with Us</p>
             <Button asChild>
-              <Link href="/about">
+              <Link href="/aboutus">
                 Learn More <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
