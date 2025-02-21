@@ -1,7 +1,10 @@
+"use client"
 import Link from "next/link"
 import Image from "next/image"
 import { ExternalLink } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { motion } from "motion/react"
+
 
 export default function Projects() {
   const projects = [
@@ -73,11 +76,22 @@ export default function Projects() {
 
   return (
     <div>
-      <h1 className="text-4xl font-bold mb-6">Projects & Initiatives</h1>
-      <p className="text-lg mb-8 text-muted-foreground">
-        Explore our ongoing projects across various domains of Tech. Feel free to contribute to any project
-        that interests you!
-      </p>
+      <motion.div
+          
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="bg-card p-4 rounded shadow-md flex flex-col "
+          >
+      <div className="flex flex-col justify-center items-center">
+        <h1 className="text-4xl font-bold mb-6 ">Projects & Initiatives</h1>
+        <p className="text-lg mb-8 text-muted-foreground">
+          
+          Explore our ongoing projects across various domains of Tech. Feel free to contribute to any project
+          that interests you!
+        </p>
+      </div>
 
       {projects.map((category) => (
         <section key={category.category} className="mb-12">
@@ -111,6 +125,7 @@ export default function Projects() {
           </div>
         </section>
       ))}
+      </motion.div>
     </div>
   )
 }

@@ -1,6 +1,9 @@
+"use client"
 import Link from "next/link"
 import { Book, Code, Shield } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { motion } from "framer-motion"
+
 
 export default function Resources() {
   const resources = [
@@ -35,6 +38,14 @@ export default function Resources() {
 
   return (
     <div>
+      <motion.div
+          
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="bg-card p-4 rounded shadow-md flex flex-col "
+          >
       <h1 className="text-4xl font-bold mb-6">Resources & Tutorials</h1>
       <p className="text-lg mb-8 text-muted-foreground">
         Explore our collection of guides, tutorials, and resources to enhance your skills in various areas of computer
@@ -64,6 +75,7 @@ export default function Resources() {
           </Card>
         ))}
       </div>
+      </motion.div>
     </div>
   )
 }

@@ -1,3 +1,4 @@
+"use client"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -5,10 +6,19 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Mail, MessageCircle } from "lucide-react"
+import { motion } from "framer-motion"
 
 export default function Contact() {
   return (
     <div className="space-y-12">
+      <motion.div
+          
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="bg-card p-4 rounded shadow-md flex flex-col "
+          >
       <section>
         <h1 className="text-4xl font-bold mb-6">Contact & Join</h1>
         <p className="text-lg mb-4 text-muted-foreground">
@@ -80,6 +90,7 @@ export default function Contact() {
           </div>
         </CardContent>
       </Card>
+      </motion.div>
     </div>
   )
 }

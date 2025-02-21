@@ -1,6 +1,8 @@
+"use client"
 import Image from "next/image"
 import { Calendar, MapPin, Video } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { motion } from "framer-motion"
 
 export default function Events() {
   const events = [
@@ -41,6 +43,14 @@ export default function Events() {
 
   return (
     <div>
+      <motion.div
+          
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="bg-card p-4 rounded shadow-md flex flex-col "
+          >
       <h1 className="text-4xl font-bold mb-6">Events & Meetings</h1>
       <p className="text-lg mb-8 text-muted-foreground">
         Stay up-to-date with our upcoming events, workshops, and meetings. Don&apos;t miss out on these opportunities to
@@ -80,6 +90,7 @@ export default function Events() {
           </Card>
         ))}
       </div>
+      </motion.div>
     </div>
   )
 }

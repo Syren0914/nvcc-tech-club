@@ -1,11 +1,21 @@
+"use client"
 import Link from "next/link"
 import Image from "next/image"
 import { MessageSquare, Gamepad } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { motion } from "framer-motion"
 
 export default function Community() {
   return (
     <div className="space-y-12">
+      <motion.div
+          
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="bg-card p-4 rounded shadow-md flex flex-col "
+          >
       <section>
         <h1 className="text-4xl font-bold mb-6">Community & Engagement</h1>
         <p className="text-lg mb-4 text-muted-foreground">
@@ -100,6 +110,7 @@ export default function Community() {
           </ul>
         </CardContent>
       </Card> */}
+      </motion.div>
     </div>
   )
 }

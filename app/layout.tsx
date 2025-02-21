@@ -21,7 +21,9 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={`${inter.className} min-h-screen bg-background text-foreground`}>
         <Navbar />
-        <main className="container mx-auto px-6 py-8">{children}</main>
+        
+        <main className="container mx-auto px-6 py-8">
+          {children}</main>
         <footer className="border-t py-6">
           <div className="container mx-auto px-6 text-center text-muted-foreground">
             <p>&copy; {new Date().getFullYear()} Tech Club. All rights reserved.</p>
