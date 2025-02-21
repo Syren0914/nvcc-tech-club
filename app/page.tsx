@@ -1,7 +1,10 @@
+"use client"
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { motion } from "motion/react"
+
 
 
 export default function Home() {
@@ -15,15 +18,24 @@ export default function Home() {
           height={400}
           className="w-full h-[400px] object-cover rounded-lg mb-8"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center rounded-lg">
-          <h1 className="text-4xl font-bold mb-4 text-white">Welcome to the Tech Club</h1>
-          <p className="text-xl mb-6 text-gray-200">Explore, Learn, and Innovate with Us</p>
-          <Button asChild>
-            <Link href="/about">
-              Learn More <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
-        </div>
+        
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center rounded-lg">
+            <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="absolute inset-0  bg-opacity-50 flex flex-col items-center justify-center rounded-lg"
+            >
+            <h1 className="text-4xl font-bold mb-4 text-white">Welcome to the Tech Club</h1>
+            <p className="text-xl mb-6 text-gray-200">Explore, Learn, and Innovate with Us</p>
+            <Button asChild>
+              <Link href="/about">
+                Learn More <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+            </motion.div>
+          </div>
+        
       </section>
 
       <section className="bg-card p-6 rounded-lg shadow-md">
@@ -31,7 +43,7 @@ export default function Home() {
         <div className="bg-background p-4 rounded border">
           <h3 className="text-xl font-medium">Workshop: Building a Full-Stack Web Application</h3>
           <p className="mt-2 text-muted-foreground">
-            Join us this Friday at 6 PM in Room 301 or via Zoom to learn how to create a modern web app from scratch!
+            Join us this Thursday at 2:30 PM in Room LC 302E or via Zoom to learn how to create a modern web app from scratch!
           </p>
           <Link href="/events" className="inline-block mt-4 text-primary hover:underline">
             View all events
@@ -40,6 +52,14 @@ export default function Home() {
       </section>
 
       <section>
+              <motion.div
+          
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="bg-card p-4 rounded shadow-md flex flex-col items-center"
+          >
         <h2 className="text-2xl font-semibold mb-4">Our Focus Areas</h2>
         <div className="flex justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
@@ -60,9 +80,18 @@ export default function Home() {
           ))}
         </div>
         </div>
+        </motion.div>
       </section>
 
       <section className="text-center">
+      <motion.div
+          
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="bg-card p-4 rounded shadow-md flex flex-col items-center"
+          >
         <h2 className="text-2xl font-semibold mb-4">Join Our Community</h2>
         <p className="mb-6 text-muted-foreground">
           Connect with fellow enthusiasts, participate in exciting projects, and enhance your skills!
@@ -79,6 +108,7 @@ export default function Home() {
           </Link>
         </Button>
         </div>
+        </motion.div>
       </section>
     </div>
   )

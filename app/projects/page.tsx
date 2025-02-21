@@ -36,7 +36,7 @@ export default function Projects() {
           name: "Password Strength Analyzer",
           description: "A tool to evaluate password security",
           repo: "https://github.com/cs-club/password-analyzer",
-          image: "/placeholder.svg?height=200&width=300&text=Password+Analyzer",
+          image: "/password.jpg",
         },
       ],
     },

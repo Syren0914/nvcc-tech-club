@@ -1,5 +1,8 @@
+"use client"
 import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { motion } from "motion/react"
+
 
 export default function About() {
   const teamMembers = [
@@ -15,6 +18,12 @@ export default function About() {
   return (
     <div className="space-y-12">
       <section>
+      <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className=" inset-0  bg-opacity-50 flex flex-col  justify-center rounded-lg"
+            >
         <h1 className="text-4xl font-bold mb-6">About Us</h1>
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="md:w-1/2">
@@ -35,9 +44,18 @@ export default function About() {
             </p>
           </div>
         </div>
+        </motion.div>
       </section>
 
       <section>
+      <motion.div
+          
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="bg-card p-4 rounded shadow-md flex flex-col items-center"
+          >
         <h2 className="text-2xl font-semibold mb-4">Our Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {teamMembers.map((member) => (
@@ -58,12 +76,13 @@ export default function About() {
             </Card>
           ))}
         </div>
+        </motion.div>
       </section>
 
       <section>
         <h2 className="text-2xl font-semibold mb-4">Join Us</h2>
         <p className="mb-4 text-muted-foreground">
-          We meet every Tuesday at 7 PM in Room 301 of the LHEC Building. All skill levels are welcome!
+          We meet every Thursday at 2:30 PM in 302E of the LC Building. All skill levels are welcome!
         </p>
         <p className="text-muted-foreground">
           To become a member, simply attend one of our meetings or fill out the sign-up form on our Contact page.
