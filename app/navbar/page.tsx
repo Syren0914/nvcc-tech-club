@@ -23,7 +23,7 @@ export default function Navbar() {
           >
         <div className="flex items-center">
           <FaCode className="text-2xl text-primary" />
-          <span className="ml-2 text-xl font-bold">Tech Club</span>
+          <span className="ml-2 text-xl font-bold">NVCC Tech Club</span>
         </div>
         </motion.div>
 

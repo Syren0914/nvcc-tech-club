@@ -17,6 +17,24 @@ export default function Projects() {
           repo: "https://github.com/cs-club/website",
           image: "/project1.png",
         },
+        {
+          name: "Personal Portfolio Website",
+          description: "Each member creates their own portfolio using HTML, CSS, and JavaScript",
+          repo: "https://github.com/cs-club/website",
+          image: "/html.jpg",
+        },
+        {
+          name: "Club Member Directory",
+          description: "A simple website that lists all club members, their roles, and GitHub profiles.",
+          repo: "https://github.com/cs-club/website",
+          image: "/project1.png",
+        },
+        {
+          name: "Event Registration System",
+          description: "A simple form where members can register for club events. \n Use Firebase or a JSON file to store submissions.",
+          repo: "https://github.com/cs-club/website",
+          image: "/project1.png",
+        },
         
       ],
     },
@@ -46,6 +64,12 @@ export default function Projects() {
     {
       category: "Game Development",
       items: [
+        {
+          name: "Slope Game",
+          description: "A classic endless runner game built from scratch using Java",
+          repo: "https://github.com/cs-club/2d-platformer",
+          image: "/slope.png",
+        },
         {
           name: "2D Platformer",
           description: "A classic platformer game built with Unity",

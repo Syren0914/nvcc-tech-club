@@ -8,11 +8,19 @@ export default function Events() {
   const events = [
     {
       title: "Weekly Club Meeting",
-      date: "Every Tuesday, 7:00 PM",
-      location: "Room 301, CS Building",
+      date: "Every Thursday, 2:30 PM",
+      location: "Room 301E, LC Building",
       description: "Our regular weekly meeting to discuss ongoing projects and club activities.",
       type: "in-person",
       image: "/meeting.jpg",
+    },
+    {
+      title: "How to 3D model",
+      date: "Every Thursday, 2:30 PM",
+      location: "Room 301E, LC Building",
+      description: "Learn the basics of 3D modeling and create your own 3D models.",
+      type: "in-person",
+      image: "/blender2.jpg",
     },
     {
       title: "Workshop: How to Build a Server",
@@ -24,7 +32,7 @@ export default function Events() {
     },
     {
       title: "Hackathon: 24-Hour Code Challenge",
-      date: "April 1-2, 2025",
+      date: "May 1-2, 2025",
       location: "University Student Center",
       description: "Join us for an exciting 24-hour coding challenge. Great prizes to be won!",
       type: "in-person",
@@ -64,8 +72,8 @@ export default function Events() {
               <Image
                 src={event.image || "/placeholder.svg"}
                 alt={event.title}
-                width={600}
-                height={400}
+                width={1200}
+                height={800}
                 className="w-full h-[200px] object-cover rounded-t-lg mb-4"
               />
               <CardTitle>{event.title}</CardTitle>

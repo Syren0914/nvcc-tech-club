@@ -7,12 +7,16 @@ import { motion } from "motion/react"
 export default function About() {
   const teamMembers = [
     { name: "Hashem Anwari", role: "Teacher Advisor", image: "/anwari.jpg" },
-    { name: "June Ip", role: "President", image: "/placeholder.svg?height=100&width=100" },
+    { name: "Jun Ip", role: "President", image: "/placeholder.svg?height=100&width=100" },
+    { name: "Nick", role: "Vice President", image: "/placeholder.svg?height=100&width=100" },
+
     { name: "Erdene Batbayar", role: "Officer", image: "/officer.jpg" },
     { name: "Deigo Fonseca", role: "Former Officer", image: "/deigo.jpg" },
-    { name: "Christian Galvez", role: "Former Officer", image: "/christian.jpg" },
+    { name: "Christian Galvez", role: "Treasurer", image: "/christian.jpg" },
+    { name: "Maggie", role: "Secretary", image: "/placeholder.svg?height=100&width=100" },
 
-    { name: "Estabon Gandarillas", role: "Secretary", image: "/placeholder.svg?height=100&width=100" },
+
+    { name: "Estabon Gandarillas", role: "Media Officer", image: "/placeholder.svg?height=100&width=100" },
   ]
 
   return (
