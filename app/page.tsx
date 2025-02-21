@@ -96,7 +96,7 @@ export default function Home() {
         <p className="mb-6 text-muted-foreground">
           Connect with fellow enthusiasts, participate in exciting projects, and enhance your skills!
         </p>
-        <div className="space-x-4">
+        <div className="space-x-4 space-y-4">
         <Button asChild variant="secondary">
           <Link href="/contact">
             Become a Member <ArrowRight className="ml-2 h-4 w-4" />
