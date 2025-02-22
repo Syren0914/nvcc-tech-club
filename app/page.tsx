@@ -12,6 +12,7 @@ export default function Home() {
   const words = ["Develop", "Design", "Discover", "Lead"];
   return (
     <div className="space-y-12 mt-12">
+      
       <section className="text-center relative">
         <Image
           src="/loundon.jpg"
