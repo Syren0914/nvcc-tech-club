@@ -2,8 +2,11 @@ import type React from "react"
 import "./globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import Navbar from "./navbar/page"
 
-import Navbar from "./navbar/page";
+
+
+
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -19,8 +22,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
+      
+      
+      
       <body className={`${inter.className} min-h-screen bg-background text-foreground`}>
-        <Navbar />
+        
+      <Navbar/>
         
         <main className="container mx-auto px-6 py-8">
           {children}</main>

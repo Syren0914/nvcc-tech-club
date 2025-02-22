@@ -37,7 +37,7 @@ export default function Resources() {
   ]
 
   return (
-    <div>
+    <div className="mt-12">
       <motion.div
           
           initial={{ opacity: 0, y: 20 }}

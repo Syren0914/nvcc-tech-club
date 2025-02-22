@@ -108,7 +108,7 @@ export default function Projects() {
           viewport={{ once: true }}
           className="bg-card p-4 rounded shadow-md flex flex-col "
           >
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center mt-12">
         <h1 className="text-4xl font-bold mb-6 ">Projects & Initiatives</h1>
         <p className="text-lg mb-8 text-muted-foreground">
           

@@ -50,7 +50,7 @@ export default function Events() {
   ]
 
   return (
-    <div>
+    <div className="mt-12">
       <motion.div
           
           initial={{ opacity: 0, y: 20 }}

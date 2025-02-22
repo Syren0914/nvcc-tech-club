@@ -4,12 +4,14 @@ import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { motion } from "motion/react"
+import { FlipWords } from "@/components/ui/flip-words"
 
 
 
 export default function Home() {
+  const words = ["Develop", "Design", "Discover", "Lead"];
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 mt-12">
       <section className="text-center relative">
         <Image
           src="/loundon.jpg"
@@ -27,8 +29,10 @@ export default function Home() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="absolute inset-0  bg-opacity-50 flex flex-col items-center justify-center rounded-lg"
             >
-            <h1 className="text-4xl font-bold mb-4 text-white">Welcome to the Tech Club</h1>
-            <p className="text-xl mb-6 text-gray-200">Explore, Learn, and Innovate with Us</p>
+            <h1 className="text-4xl font-bold mb-4 text-white ">Welcome to the NVCC Tech Club <br /></h1>
+            <div className="flex">
+              <p className="text-xl mb-6 text-gray-200">Empowering You to  </p> <FlipWords words={words} className="text-xl mb-6 text-gray-200"/>
+            </div>
             <Button asChild>
               <Link href="/aboutus">
                 Learn More <ArrowRight className="ml-2 h-4 w-4" />
@@ -39,8 +43,8 @@ export default function Home() {
         
       </section>
 
-      <section className="bg-card p-6 rounded-lg shadow-md">
-        <h2 className="text-2xl font-semibold mb-4">Upcoming Event</h2>
+      <section className="bg-card p-6 rounded-lg shadow-md flex flex-col items-center">
+        <h2 className="text-2xl font-semibold mb-8">Upcoming Event</h2>
         <div className="bg-background p-4 rounded border">
           <h3 className="text-xl font-medium">Workshop: Building a Full-Stack Web Application</h3>
           <p className="mt-2 text-muted-foreground">

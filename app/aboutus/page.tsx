@@ -7,20 +7,20 @@ import { motion } from "motion/react"
 export default function About() {
   const teamMembers = [
     { name: "Hashem Anwari", role: "Teacher Advisor", image: "/anwari.jpg" },
-    { name: "Jun Ip", role: "President", image: "/placeholder.svg?height=100&width=100" },
-    { name: "Nick", role: "Vice President", image: "/placeholder.svg?height=100&width=100" },
+    { name: "Jun Ip", role: "President", image: "/programmer.png" },
+    { name: "Nick", role: "Vice President", image: "/programmer.png" },
 
     { name: "Erdene Batbayar", role: "Officer", image: "/officer.jpg" },
     { name: "Deigo Fonseca", role: "Former Officer", image: "/deigo.jpg" },
     { name: "Christian Galvez", role: "Treasurer", image: "/christian.jpg" },
-    { name: "Maggie", role: "Secretary", image: "/placeholder.svg?height=100&width=100" },
+    { name: "Maggie", role: "Secretary", image: "/programmer.png" },
 
 
-    { name: "Estabon Gandarillas", role: "Media Officer", image: "/placeholder.svg?height=100&width=100" },
+    { name: "Estabon Gandarillas", role: "Media Officer", image: "/programmer.png" },
   ]
 
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 mt-12">
       <section>
       <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
