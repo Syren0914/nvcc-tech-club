@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Header from '@/components/ui/Header';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,9 @@ export default function Navbar() {
             <Image src={'/nighthawk.png'} alt={''} width={40} height={40}></Image>
           Tech Club
         </Link>
-        <div className="md:hidden">
+        <Header></Header>
+        
+        {/* <div className="md:hidden">
           <button onClick={() => setIsOpen(true)}>
             <FaBars className="text-2xl" />
           </button>
@@ -29,8 +32,10 @@ export default function Navbar() {
           <li><Link href="/resources">Resources</Link></li>
           <li><Link href="/community">Community</Link></li>
           <li><Link href="/contact">Contact</Link></li>
-        </ul>
+          
+        </ul> */}
       </nav>
+      
       
       {/* Mobile Menu */}
       {isOpen && (

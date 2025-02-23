@@ -17,8 +17,8 @@ export default function Home() {
         <Image
           src="/loundon.jpg"
           alt="Tech Club Hero"
-          width={1200}
-          height={400}
+          width={1600}
+          height={800}
           priority
           className="w-full h-[400px] object-cover rounded-lg mb-8"
         />

@@ -3,6 +3,7 @@ import "./globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import Navbar from "./navbar/page"
+import Header from '../components/ui/Header';
 
 
 
@@ -28,6 +29,8 @@ export default function RootLayout({
       <body className={`${inter.className} min-h-screen bg-background text-foreground`}>
         
       <Navbar/>
+      
+      
         
         <main className="container mx-auto px-6 py-8">
           {children}</main>
