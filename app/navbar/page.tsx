@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Header from '@/components/ui/Header';
+// import Header from '@/components/ui/Header';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
