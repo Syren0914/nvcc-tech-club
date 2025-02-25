@@ -9,10 +9,9 @@ export default function About() {
     { name: "Hashem Anwari", role: "Teacher Advisor", image: "/anwari.jpg" },
     { name: "Jun Ip", role: "President", image: "/programmer.png" },
     { name: "Nick", role: "Vice President", image: "/programmer.png" },
-
-    { name: "Erdene Batbayar", role: "Officer", image: "/officer.jpg" },
+    { name: "Erdene Batbayar", role: "Treasurer", image: "/officer.jpg" },
     { name: "Deigo Fonseca", role: "Former Officer", image: "/deigo.jpg" },
-    { name: "Christian Galvez", role: "Treasurer", image: "/christian.jpg" },
+    { name: "Christian Galvez", role: "Former Treasurer", image: "/christian.jpg" },
     { name: "Maggie", role: "Secretary", image: "/programmer.png" },
 
 
