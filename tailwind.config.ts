@@ -10,10 +10,10 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
-  			background: 'hsl(var(--background))',
+  			background: '#000000',
   			foreground: 'hsl(var(--foreground))',
   			card: {
-  				DEFAULT: 'hsl(var(--card))',
+  				DEFAULT: '#000000',
   				foreground: 'hsl(var(--card-foreground))'
   			},
   			popover: {

@@ -17,9 +17,9 @@ export default function Navbar() {
             <Image src={'/nighthawk.png'} alt={''} width={40} height={40}></Image>
           Tech Club
         </Link>
-        <Header></Header>
+        {/* <Header></Header> */}
         
-        {/* <div className="md:hidden">
+        <div className="md:hidden">
           <button onClick={() => setIsOpen(true)}>
             <FaBars className="text-2xl" />
           </button>
@@ -33,7 +33,7 @@ export default function Navbar() {
           <li><Link href="/community">Community</Link></li>
           <li><Link href="/contact">Contact</Link></li>
           
-        </ul> */}
+        </ul>
       </nav>
       
       
