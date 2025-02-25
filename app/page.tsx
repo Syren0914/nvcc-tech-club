@@ -34,11 +34,20 @@ export default function Home() {
             <div className="flex">
               <p className="text-xl mb-6 text-gray-200">Empowering You to  </p> <FlipWords words={words} className="text-xl mb-6 text-gray-200"/>
             </div>
-            <Button asChild>
-              <Link href="/aboutus">
-                Learn More <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
+            <div className="flex  gap-3 sm:flex-row ">
+              <Button asChild>
+                <Link href="/aboutus" className="flex">
+                  Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+                
+              </Button>
+              <Button asChild className="bg-black text-white">
+                <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeRWQ6YGQQGmZTb6s4E6b9ZHulQC2XCmV1k9ZKLRDj5wF2GMg/viewform?usp=dialog">
+                  Fill out the Form <ArrowRight className="ml-2 h-4 w-4 " />
+                </Link>
+                
+              </Button>
+            </div>
             </motion.div>
           </div>
         
